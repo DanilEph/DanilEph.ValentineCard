@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+   background: rgb(7, 0, 34); 
+   width: 100%;
+   transition: .5s all;
+}
+.btn-start {      
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.904);
+    border: none;
+    transition: .5s all;
+    font-size: 40px;
+    color:  rgb(7, 0, 34);
+
+
+}
+.btn-start__wrapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+canvas {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.btn-start:hover {
+    font: 40px;
+    width: 330px;
+    height: 330px;
+}
+
+.btn-start__name {
+    transition: 1s all;
+    font-family: 'Reggae One', cursive;
+    font-size: 40px !important;
+}
+
+
+.letter {
+    display: none;
+    position: absolute;
+    top: calc(0px - 500px);
+}
+
+.letter img {
+    width: 500px;
+}
+
+.letter img:last-child {
+    display: none;
+}
+
+.placeholder {
+    display: none;
+    background: rgb(5, 0, 71);
+    position: absolute;
+    top: 310px;
+    left: 33px;
+    width: 433px;
+    min-height: 300px;
+    color: #EEADAD;
+    padding: 20px 40px;
+    font-family: 'Pattaya', sans-serif;
+
+}
+
+#canvas-basic {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h1 {
+    font-size: 30px !important;
+}
+
+p {
+    font-size: 16px !important;
+    margin-top: 10px;
+    word-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+    .btn-start {
+        width: 200px;
+        height: 200px; 
+    }
+    .btn-start__name {
+        font-size: 30px !important;
+    }
+    .letter img{
+        width: 300px;
+    }
+    .placeholder {
+        width: 233px;
+        top: 190px;
+
+    }
+    p {
+        font-size: 14px !important;
+    }
+    h1 {
+        font-size: 20px !important;
+    }
+  }
